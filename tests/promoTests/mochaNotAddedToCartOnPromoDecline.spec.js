@@ -1,4 +1,4 @@
-import { test } from '../_fixtures/fixtures';
+import { test } from '../fixtures/fixtures';
 
 test('Assert discounted Mocha added to the Cart after promo accepting', async ({ menuPage, cartPage }) => {
 

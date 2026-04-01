@@ -1,5 +1,5 @@
-import { test } from '../_fixtures/fixtures';
-import { getPriceForQuantity } from '../../src/common/helpers/getPriceForQuantity';
+import { test } from '../fixtures/fixtures';
+import { unitPriceFormatStr, priceFormatStr } from '../../src/common/helpers/getPriceForQuantity';
 import { COFFEE_PRICES } from '../../src/constants';
 
 test('Check Cappuccino correctly added to the Cart', async ({ menuPage, cartPage }) => {
@@ -12,9 +12,9 @@ test('Check Cappuccino correctly added to the Cart', async ({ menuPage, cartPage
 
   await cartPage.assertCappuccinoNameIsContainsCorrectText();
   await cartPage.assertCappuccinoUnitContainsCorrectText(
-    getPriceForQuantity(COFFEE_PRICES.CAPPUCCINO_PRICE).unitPriceFormatStr(1)
+    unitPriceFormatStr(COFFEE_PRICES.CAPPUCCINO_PRICE, 1)
   );
   await cartPage.assertCappuccinoTotalCostContainsCorrectText(
-    getPriceForQuantity(COFFEE_PRICES.CAPPUCCINO_PRICE).priceFormatStr(1)
+    priceFormatStr(COFFEE_PRICES.CAPPUCCINO_PRICE, 1)
   );
 });

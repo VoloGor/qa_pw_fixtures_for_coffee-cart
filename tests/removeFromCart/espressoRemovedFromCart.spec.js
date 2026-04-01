@@ -1,4 +1,4 @@
-import { test } from '../_fixtures/fixtures';
+import { test } from '../fixtures/fixtures';
 
 test('Check Espresso removed from Cart after clicking remove button', async ({ menuPage, cartPage }) => {
 
