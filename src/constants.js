@@ -1,0 +1,9 @@
+export const ESPRESSO_PRICE = '10.00';
+export const ESPRESSO_MACCHIATO_PRICE = '12.00';
+export const CAPPUCCINO_PRICE = '19.00';
+export const MOCHA_PRICE = '8.00';
+export const FLAT_WHITE_PRICE = '18.00';
+export const AMERICANO_PRICE = '7.00';
+export const CAFE_LATTE_PRICE = '16.00';
+export const ESPRESSO_CON_PANNA_PRICE = '14.00';
+export const CAFE_BREVE_PRICE = '15.00';
